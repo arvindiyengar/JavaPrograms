@@ -1,0 +1,24 @@
+import java.net.*;
+import java.util.*;
+import java.io.*;
+
+class Clientdemo
+{
+public static void main(String args[])
+{
+try
+{
+//ServerSocket ss=new ServerSocket(777);
+Socket s=new Socket("Local Arvind",777);
+InputStream os=s.getInputStream();
+DataIntputStream dos=new DataInputStream(os);
+int a=dos.readInt(1254689632);
+System.out.println("Num received"+a);
+s.close();
+}
+catch(Exception e)
+{
+System.out.println("Excep"+e);
+}
+}
+}

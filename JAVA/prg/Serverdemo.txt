@@ -1,0 +1,23 @@
+import java.net.*;
+import java.util.*;
+import java.io.*;
+
+class Serverdemo
+{
+public static void main(String args[])
+{
+try
+{
+ServerSocket ss=new ServerSocket(777);
+Socket s=ss.accept();
+OutputStream os=s.getOutputStream();
+DataOutputStream dos=new DataOutputStream(os);
+dos.writeInt(1254689632);
+s.close();
+}
+catch(Exception e)
+{
+System.out.println("Excep"+e);
+}
+}
+}

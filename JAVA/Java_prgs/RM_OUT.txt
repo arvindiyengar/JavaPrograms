@@ -1,0 +1,90 @@
+Sample Input/Output for RM-Scheduling Algorithm
+***********************************************
+
+Enter No. of Tasks: 4
+Enter Execution Time E-1: 20
+Enter Period P-1: 100
+Enter Execution Time E-2: 30
+Enter Period P-2: 150
+Enter Execution Time E-3: 80
+Enter Period P-3: 210
+Enter Execution Time E-4: 100
+Enter Period P-4: 
+400
+
+TaskNo	Exe.Time(e)	Period
+1	20		100
+2	30		150
+3	80		210
+4	100		400
+
+
+L-Values: 
+Task-1: 1,
+Task-2: 1,1,
+Task-3: 2,1,1,
+Task-4: 4,2,1,1,
+
+
+The ComputeTime: 
+
+Task-1: 100, 
+Task-2: 100, 150, 
+Task-3: 200, 100, 150, 210, 
+Task-4: 400, 200, 300, 100, 150, 210, 
+
+
+RM-Scheduling Conditions...
+
+
+
+Task-1:  
+
+For 100: 20 <= 100
+
+
+
+Task-2:  
+For 100: 50 <= 100 
+
+For 150: 70 <= 150
+
+
+
+Task-3:  
+
+For 200: 180 <= 200 
+
+For 100: 130 <= 100 
+
+For 150: 150 <= 150 
+
+For 210: 200 <= 210
+
+
+
+Task-4:  
+
+For 400: 430 <= 400 
+
+For 200: 280 <= 200 
+
+For 300: 380 <= 300 
+
+For 100: 230 <= 100 
+
+For 150: 250 <= 150 
+
+For 210: 300 <= 210
+
+
+
+***************************************
+Final Conclusion: 
+
+***************************************
+Task-1 Can Be RM-Scheduled...
+Task-2 Can Be RM-Scheduled...
+Task-3 Can Be RM-Scheduled...
+Task-4 Can Not Be RM-Scheduled...
+***************************************
